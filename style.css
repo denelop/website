@@ -28,6 +28,67 @@ header a {
   color: white;
 }
 
+.logo-svg {
+  fill: white;
+  height: 4rem;
+
+  transform-origin: top;
+  animation-name: strobe;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes strobe {
+  0% {
+    fill: white;
+    transform: translateX(2px) rotate(4deg);
+  }
+  1% {
+    fill: yellow;
+    transform: translateX(-2px) rotate(-4deg);
+  }
+  2% {
+    fill: purple;
+    transform: translateX(2px) rotate(4deg);
+  }
+  3% {
+    fill: red;
+    transform: translateX(-2px) rotate(-4deg);
+  }
+  4% {
+    fill: green;
+    transform: translateX(2px) rotate(4deg);
+  }
+  5% {
+    fill: indigo;
+    transform: translateX(-2px) rotate(-4deg);
+  }
+  6% {
+    fill: orange;
+    transform: translateX(2px) rotate(4deg);
+  }
+  7% {
+    fill: brown;
+    transform: translateX(-2px) rotate(-4deg);
+  }
+  8% {
+    fill: magenta;
+    transform: translateX(2px) rotate(4deg);
+  }
+  9% {
+    fill: blue;
+    transform: translateX(-2px) rotate(-4deg);
+  }
+
+  /* pause */
+  10% {
+    fill: white;
+    transform: translateX(0) rotate(0);
+  }
+  100% {
+    fill: white;
+  }
+}
+
 .logo-font {
   font-family: "Poppins", sans-serif;
 }
