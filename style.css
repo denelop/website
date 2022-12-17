@@ -34,6 +34,7 @@ header a {
 
   transform-origin: top;
   animation-name: strobe;
+  animation-delay: 2s;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
