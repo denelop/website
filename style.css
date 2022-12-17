@@ -1,0 +1,57 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* styles */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  color: white;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.logo-font {
+  font-family: "Poppins", sans-serif;
+}
+.logo-text {
+  font-weight: 500;
+}
+.logo-slogan {
+  color: gray;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
