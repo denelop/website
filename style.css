@@ -24,6 +24,10 @@ header {
   padding: 2rem;
 }
 
+header a {
+  color: white;
+}
+
 .logo-font {
   font-family: "Poppins", sans-serif;
 }
