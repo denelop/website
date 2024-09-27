@@ -41,48 +41,59 @@ header a {
 @keyframes strobe {
   0% {
     fill: white;
-    transform: translateX(2px) rotate(4deg);
+    filter: drop-shadow(0px 0px 3px white);
+    transform: translateX(1px) rotate(1deg);
   }
   1% {
     fill: yellow;
-    transform: translateX(-2px) rotate(-4deg);
+    filter: drop-shadow(0px 0px 3px yellow);
+    transform: translateX(-1px) rotate(-3deg);
   }
   2% {
     fill: purple;
-    transform: translateX(2px) rotate(4deg);
+    filter: drop-shadow(0px 0px 3px purple);
+    transform: translateX(1px) rotate(1deg);
   }
   3% {
-    fill: red;
-    transform: translateX(-2px) rotate(-4deg);
+    fill: lightcoral;
+    filter: drop-shadow(0px 0px 3px lightcoral);
+    transform: translateX(-1px) rotate(-3deg);
   }
   4% {
     fill: green;
-    transform: translateX(2px) rotate(4deg);
+    filter: drop-shadow(0px 0px 3px green);
+    transform: translateX(1px) rotate(1deg);
   }
   5% {
     fill: indigo;
-    transform: translateX(-2px) rotate(-4deg);
+    filter: drop-shadow(0px 0px 3px indigo);
+    transform: translateX(-1px) rotate(-3deg);
   }
   6% {
     fill: orange;
-    transform: translateX(2px) rotate(4deg);
+    filter: drop-shadow(0px 0px 3px orange);
+    transform: translateX(1px) rotate(1deg);
   }
   7% {
     fill: brown;
-    transform: translateX(-2px) rotate(-4deg);
+    filter: drop-shadow(0px 0px 3px brown);
+    transform: translateX(-1px) rotate(-3deg);
   }
   8% {
     fill: magenta;
-    transform: translateX(2px) rotate(4deg);
+    filter: drop-shadow(0px 0px 3px magenta);
+    transform: translateX(1px) rotate(1deg);
   }
   9% {
-    fill: blue;
-    transform: translateX(-2px) rotate(-4deg);
+    fill: lightblue;
+    filter: drop-shadow(0px 0px 3px lightblue);
+    transform: translateX(-1px) rotate(-3deg);
   }
 
   /* pause */
   10% {
     fill: white;
+    filter: drop-shadow(0px 0px 3px white);
     transform: translateX(0) rotate(0);
   }
   100% {
