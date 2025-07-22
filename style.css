@@ -28,86 +28,13 @@ header a {
   color: white;
 }
 
-.logo-svg {
-  fill: white;
-  height: 4rem;
-
-  transform-origin: top;
-  animation-name: strobe;
-  animation-delay: 2s;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-@keyframes strobe {
-  0% {
-    fill: white;
-    filter: drop-shadow(0px 0px 3px white);
-    transform: translateX(1px) rotate(1deg);
-  }
-  1% {
-    fill: yellow;
-    filter: drop-shadow(0px 0px 3px yellow);
-    transform: translateX(-1px) rotate(-3deg);
-  }
-  2% {
-    fill: purple;
-    filter: drop-shadow(0px 0px 3px purple);
-    transform: translateX(1px) rotate(1deg);
-  }
-  3% {
-    fill: lightcoral;
-    filter: drop-shadow(0px 0px 3px lightcoral);
-    transform: translateX(-1px) rotate(-3deg);
-  }
-  4% {
-    fill: green;
-    filter: drop-shadow(0px 0px 3px green);
-    transform: translateX(1px) rotate(1deg);
-  }
-  5% {
-    fill: indigo;
-    filter: drop-shadow(0px 0px 3px indigo);
-    transform: translateX(-1px) rotate(-3deg);
-  }
-  6% {
-    fill: orange;
-    filter: drop-shadow(0px 0px 3px orange);
-    transform: translateX(1px) rotate(1deg);
-  }
-  7% {
-    fill: brown;
-    filter: drop-shadow(0px 0px 3px brown);
-    transform: translateX(-1px) rotate(-3deg);
-  }
-  8% {
-    fill: magenta;
-    filter: drop-shadow(0px 0px 3px magenta);
-    transform: translateX(1px) rotate(1deg);
-  }
-  9% {
-    fill: lightblue;
-    filter: drop-shadow(0px 0px 3px lightblue);
-    transform: translateX(-1px) rotate(-3deg);
-  }
-
-  /* pause */
-  10% {
-    fill: white;
-    filter: drop-shadow(0px 0px 3px white);
-    transform: translateX(0) rotate(0);
-  }
-  100% {
-    fill: white;
-  }
-}
-
-.logo-font {
+.heading {
   font-family: "Poppins", sans-serif;
 }
-.logo-text {
+.text {
   font-weight: 500;
 }
-.logo-slogan {
+.slogan {
   color: gray;
 }
 
@@ -131,4 +58,306 @@ footer {
   color: white;
   display: flex;
   justify-content: space-between;
+}
+
+/* logo with glitch animation */
+.logo {
+  position: relative;
+  display: flex; /* to correctly wrap the svg */
+  width: 4rem;
+
+  svg {
+    fill: white; /* all svgs are white */
+  }
+
+  .before,
+  .after {
+    z-index: 1; /* to ensure they are above the svg */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .before {
+    background-color: black; /* mask */
+
+    left: -2px;
+
+    animation-name: noise-before;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    svg {
+      filter: drop-shadow(-1px 0 red);
+    }
+  }
+  .after {
+    background-color: black; /* mask */
+
+    left: 2px;
+
+    animation-name: noise-after;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    svg {
+      filter: drop-shadow(-1px 0 blue);
+    }
+  }
+}
+
+/* noise.sass */
+@keyframes noise-before {
+  0% {
+    display: none;
+  }
+  2.5% {
+    display: none;
+  }
+  5% {
+    display: none;
+  }
+  7.5% {
+    display: none;
+  }
+  10% {
+    display: none;
+  }
+  12.5% {
+    display: none;
+  }
+  15% {
+    display: none;
+  }
+  17.5% {
+    display: none;
+  }
+  20% {
+    display: none;
+  }
+  22.5% {
+    display: none;
+  }
+  25% {
+    display: none;
+  }
+  27.5% {
+    display: none;
+  }
+  30% {
+    display: none;
+  }
+  32.5% {
+    display: none;
+  }
+  35% {
+    display: none;
+  }
+  37.5% {
+    display: none;
+  }
+  40% {
+    display: none;
+  }
+  42.5% {
+    clip-path: inset(26% 0 32% 0);
+  }
+  45% {
+    clip-path: inset(57% 0 23% 0);
+  }
+  47.5% {
+    clip-path: inset(43% 0 51% 0);
+  }
+  50% {
+    clip-path: inset(83% 0 2% 0);
+  }
+  52.5% {
+    clip-path: inset(2% 0 88% 0);
+  }
+  55% {
+    clip-path: inset(3% 0 67% 0);
+  }
+  57.5% {
+    clip-path: inset(13% 0 63% 0);
+  }
+  60% {
+    clip-path: inset(26% 0 45% 0);
+  }
+  62.5% {
+    clip-path: inset(32% 0 30% 0);
+  }
+  65% {
+    clip-path: inset(71% 0 8% 0);
+  }
+  67.5% {
+    clip-path: inset(9% 0 33% 0);
+  }
+  70% {
+    clip-path: inset(85% 0 15% 0);
+  }
+  72.5% {
+    clip-path: inset(62% 0 17% 0);
+  }
+  75% {
+    clip-path: inset(75% 0 18% 0);
+  }
+  77.5% {
+    clip-path: inset(96% 0 5% 0);
+  }
+  80% {
+    clip-path: inset(84% 0 3% 0);
+  }
+  82.5% {
+    clip-path: inset(16% 0 12% 0);
+  }
+  85% {
+    clip-path: inset(18% 0 74% 0);
+  }
+  87.5% {
+    clip-path: inset(64% 0 31% 0);
+  }
+  90% {
+    clip-path: inset(54% 0 33% 0);
+  }
+  92.5% {
+    clip-path: inset(35% 0 26% 0);
+  }
+  95% {
+    clip-path: inset(11% 0 1% 0);
+  }
+  97.5% {
+    clip-path: inset(76% 0 12% 0);
+  }
+  100% {
+    clip-path: inset(13% 0 70% 0);
+  }
+}
+@keyframes noise-after {
+  0% {
+    display: none;
+  }
+  2.5% {
+    display: none;
+  }
+  5% {
+    display: none;
+  }
+  7.5% {
+    display: none;
+  }
+  10% {
+    display: none;
+  }
+  12.5% {
+    display: none;
+  }
+  15% {
+    display: none;
+  }
+  17.5% {
+    display: none;
+  }
+  20% {
+    display: none;
+  }
+  22.5% {
+    display: none;
+  }
+  25% {
+    display: none;
+  }
+  27.5% {
+    display: none;
+  }
+  30% {
+    display: none;
+  }
+  32.5% {
+    display: none;
+  }
+  35% {
+    display: none;
+  }
+  37.5% {
+    display: none;
+  }
+  40% {
+    display: none;
+  }
+  42.5% {
+    clip-path: inset(93% 0 4% 0);
+  }
+  45% {
+    clip-path: inset(37% 0 55% 0);
+  }
+  47.5% {
+    clip-path: inset(96% 0 1% 0);
+  }
+  50% {
+    clip-path: inset(97% 0 3% 0);
+  }
+  52.5% {
+    clip-path: inset(45% 0 33% 0);
+  }
+  55% {
+    clip-path: inset(21% 0 2% 0);
+  }
+  57.5% {
+    clip-path: inset(5% 0 37% 0);
+  }
+  60% {
+    clip-path: inset(10% 0 74% 0);
+  }
+  62.5% {
+    clip-path: inset(67% 0 29% 0);
+  }
+  65% {
+    clip-path: inset(35% 0 54% 0);
+  }
+  67.5% {
+    clip-path: inset(34% 0 26% 0);
+  }
+  70% {
+    clip-path: inset(74% 0 13% 0);
+  }
+  72.5% {
+    clip-path: inset(93% 0 6% 0);
+  }
+  75% {
+    clip-path: inset(87% 0 12% 0);
+  }
+  77.5% {
+    clip-path: inset(50% 0 1% 0);
+  }
+  80% {
+    clip-path: inset(2% 0 13% 0);
+  }
+  82.5% {
+    clip-path: inset(84% 0 13% 0);
+  }
+  85% {
+    clip-path: inset(75% 0 1% 0);
+  }
+  87.5% {
+    clip-path: inset(95% 0 4% 0);
+  }
+  90% {
+    clip-path: inset(58% 0 17% 0);
+  }
+  92.5% {
+    clip-path: inset(65% 0 6% 0);
+  }
+  95% {
+    clip-path: inset(65% 0 25% 0);
+  }
+  97.5% {
+    clip-path: inset(19% 0 65% 0);
+  }
+  100% {
+    clip-path: inset(79% 0 20% 0);
+  }
 }

@@ -1,0 +1,25 @@
+$steps: 40;
+$pauseRate: 0.4;
+
+@mixin keyframes {
+  @for $i from 0 through $steps {
+    $rate: $i * (1 / $steps);
+    #{percentage($rate)} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      @if $pauseRate >= $rate {
+        display: none;
+      } @else {
+        clip-path: inset(#{$top + "%"} 0 #{$bottom + "%"} 0);
+      }
+    }
+  }
+}
+
+@keyframes noise-before {
+  @include keyframes;
+}
+
+@keyframes noise-after {
+  @include keyframes;
+}
