@@ -1,5 +1,5 @@
 $steps: 40;
-$pauseRate: 0.4;
+$pauseRate: 0.5;
 
 @mixin keyframes {
   @for $i from 0 through $steps {

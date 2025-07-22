@@ -163,16 +163,16 @@ footer {
     display: none;
   }
   42.5% {
-    clip-path: inset(26% 0 32% 0);
+    display: none;
   }
   45% {
-    clip-path: inset(57% 0 23% 0);
+    display: none;
   }
   47.5% {
-    clip-path: inset(43% 0 51% 0);
+    display: none;
   }
   50% {
-    clip-path: inset(83% 0 2% 0);
+    display: none;
   }
   52.5% {
     clip-path: inset(2% 0 88% 0);
@@ -288,16 +288,16 @@ footer {
     display: none;
   }
   42.5% {
-    clip-path: inset(93% 0 4% 0);
+    display: none;
   }
   45% {
-    clip-path: inset(37% 0 55% 0);
+    display: none;
   }
   47.5% {
-    clip-path: inset(96% 0 1% 0);
+    display: none;
   }
   50% {
-    clip-path: inset(97% 0 3% 0);
+    display: none;
   }
   52.5% {
     clip-path: inset(45% 0 33% 0);
