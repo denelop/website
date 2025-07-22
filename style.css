@@ -63,7 +63,6 @@ footer {
 /* logo with glitch animation */
 .logo {
   position: relative;
-  display: flex; /* to correctly wrap the svg */
   width: 4rem;
 
   svg {
